@@ -1,15 +1,9 @@
 public class Main {
 
     public static void main(String[] args) {
-	int result = 0, squared = 0, sumed = 0, squaredFinal = 0;
+        int numbers = 100; //default 100
+        Computer computer = new Computer(numbers);
 
-	for (short i = 1; i < 101; i++){
-	    squared = i * i;
-	    squaredFinal += squared;
-	    sumed += i;
-    }
-	sumed *= sumed;
-	result = sumed - squaredFinal;
-	System.out.println(result);
+        System.out.println(computer.getResult());//Answer 25164150
     }
 }

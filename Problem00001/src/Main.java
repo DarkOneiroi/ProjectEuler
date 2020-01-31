@@ -1,16 +1,14 @@
 public class Main {
 
     public static void main(String[] args) {
-	short multipleThree = 3;
-	short multipleFive = 5;
-	short maxNumber = 1000;
-	int result = 0;
+        short multipleThree = 3;
+        short multipleFive = 5;
+        short maxNumber = 1000;
+        int result = 0;//Answer 233168
 
-	for(int i = 0; i < 1000; i++) {
-		if (((i % multipleThree) == 0) || ((i % multipleFive) == 0)) {
-			result += i;
-		}
-	}
-	System.out.println(result);
+        Computer compute = new Computer(multipleThree, multipleFive, maxNumber);
+        result = compute.getResult();
+
+        System.out.println(result);
     }
 }
