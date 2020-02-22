@@ -7,7 +7,7 @@ public class Main {
         Computer computer = new Computer(maxNumber);
         int result = computer.getResult();//Answer 906609
 
-        System.out.println("Nejvetsi palyndrom je:");
+        System.out.println("Nejvetsi palyndrom nasobku trojcifernych cisel je:");
         System.out.println(result);
     }
 }

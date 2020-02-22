@@ -1,9 +1,15 @@
 import java.util.ArrayList;
 
 public class Computer {
+    private int maxNumber;
     private int result = 0;
 
     public Computer(int maxNumber) {
+        this.maxNumber = maxNumber;
+        compute();
+    }
+
+    private void compute(){
         ArrayList<Integer> allResults = new ArrayList<>();
         for (short i = 1; i < maxNumber; i++) {
             for (short j = 1; j < maxNumber; j++) {
@@ -25,7 +31,7 @@ public class Computer {
         ) {
             if (k > result) {
                 result = k;
-                System.out.println(k);
+                //System.out.println(k);
             }
         }
     }
