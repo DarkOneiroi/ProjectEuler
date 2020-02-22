@@ -1,9 +1,17 @@
 import java.util.ArrayList;
 
 public class Computer {
-    ArrayList<Long> results = new ArrayList<>();//inicializace ArrayListu - nemusim s nim kopirovat cele array, kdyz chci pridat dalsi prvek
+    private long inputNmbr;
+    private long multiplication;
+    private ArrayList<Long> results = new ArrayList<>();//inicializace ArrayListu - nemusim s nim kopirovat cele array, kdyz chci pridat dalsi prvek
 
     public Computer(long inputNmbr, long multiplication) {
+        this.inputNmbr = inputNmbr;
+        this.multiplication = multiplication;
+        compute();
+    }
+
+    private void compute(){
         for (long i = 0L; i < inputNmbr; i++) {
             short j = 1;
             short divisionNmbrs = 0;
