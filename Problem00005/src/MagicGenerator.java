@@ -1,13 +1,18 @@
 public class MagicGenerator {
-    public long number;
+    private long magicNumber;
+    public long number = 1;
 
-    public MagicGenerator(int number) {
-        this.number = number;
-        for (int i = 1; i < number; i++) {
-            if (((this.number % i) == 0)) {
+    public MagicGenerator(int magicNumber) {
+        this.magicNumber = magicNumber;
+        magick();
+    }
+
+    private void magick(){
+        for (int i = 1; i < magicNumber; i++) {
+            if (((number % i) == 0)) {
                 continue;
             } else {
-                this.number++;
+                number++;
                 i = 1;
             }
         }
