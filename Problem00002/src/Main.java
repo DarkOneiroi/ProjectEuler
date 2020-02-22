@@ -5,8 +5,8 @@ public class Main {
         int second = 2;
         int cacheNmbr = 0;
         int maxNmbr = 4000000;
-        int result = second;//Answer 4613732
+        int result = 0;//Answer 4613732
 
-        Computer computer = new Computer(cacheNmbr, first, second, maxNmbr, result);
+        Computer computer = new Computer(cacheNmbr, first, second, maxNmbr);
     }
 }
